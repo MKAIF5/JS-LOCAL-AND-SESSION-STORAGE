@@ -1,6 +1,9 @@
-const key = prompt("Enter your key you want to see")
-const value = prompt("Enter your value you want to see")
+const key = prompt("enetr key you want to set");
+const value = prompt("enter value you want to set");
 
-localStorage.setItem(key , value)
+localStorage.setItem(key, value)
+console.log(` the value is set ${key} is  ${localStorage.getItem(key)}`)
 
-console.log(`the key is ${key} and value is ${localStorage.getItem(key)}`);
+if (key == "red" || key == "blue") {
+    localStorage.removeItem(key)
+}
